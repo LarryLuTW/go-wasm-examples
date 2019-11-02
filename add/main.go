@@ -4,8 +4,8 @@ import (
 	"syscall/js"
 )
 
-func add(this js.Value, inputs []js.Value) interface{} {
-	a, b := inputs[0].Int(), inputs[1].Int()
+func add(this js.Value, args []js.Value) interface{} {
+	a, b := args[0].Int(), args[1].Int()
 	return a + b
 }
 
